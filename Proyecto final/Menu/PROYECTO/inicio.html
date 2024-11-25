@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+            background-color: #f0f0f0;
+            margin: 0; 
+            font-family: 'Arial', sans-serif;
+            position: relative; 
+            z-index: 2;
+        }
+        .contenedor {
+            display: flex; 
+            position: relative; 
+            z-index: 2;
+        }
+        .carta {
+            width: 150px; 
+            height: 200px;
+            margin: 15px; 
+            padding: 10px; 
+            background-color: #374150; 
+            color: white; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            font-size: 17px; 
+            transition: transform 0.3s, background-color 0.3s; 
+            position: relative; 
+            z-index: 2;
+            text-decoration: none; /* Elimina subrayado del enlace */
+        }
+        .carta img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+        }
+        .carta:hover {
+            transform: translateY(-5px); 
+            background-color: #ae00ff;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .capa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1c1c1d;
+            opacity: 0.5;
+            mix-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body background="prueba10.png">
+
+    <div class="contenedor">
+        <a href="file:///D:/Proyecto%20final/Contenido/Proyecto-contenido_Ensayo-20241125T012831Z-001/Proyecto-contenido_Ensayo/index.html" class="carta">
+            <img src="elensayo.webp" alt="Imagen 1">
+            <br>
+            ¿QUÉ ES?
+        </a>
+        <a href="file:///D:/Proyecto%20final/Contenido/Proyecto-contenido_Ensayo-20241125T012831Z-001/Proyecto-contenido_Ensayo/caracterisicas.html" class="carta">
+            <img src="foco.webp" alt="Imagen 2">
+            <br>
+            CARACTERISTICAS
+        </a>
+        <a href="file:///D:/Proyecto%20final/Contenido/Proyecto-contenido_Ensayo-20241125T012831Z-001/Proyecto-contenido_Ensayo/%C2%BFComo%20hacer%20un%20ensayo.html" class="carta">
+            <img src="leyendo.jpg" alt="Imagen 3">
+            <br>
+            COMO HACER UN ENSAYO
+        </a>
+    </div>
+    <br><br>
+</body>
+</html>
